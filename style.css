@@ -1,0 +1,523 @@
+/*
+Theme Name: area-medicos
+Author: Monti Comunicaciones
+Author URI: https://monticomunicaciones.cl
+Description: Tema área médica
+Version: 1.0
+Tags: Médicos.
+*/
+body{
+
+    background: rgba(224,224,224,1);
+    background: -moz-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(224,224,224,1)), color-stop(52%, rgba(255,255,255,1)), color-stop(60%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff', GradientType=0 );
+    padding-bottom: 0px;
+}
+.telefonos{
+    background: rgba(71,182,165,1);
+    background: -moz-linear-gradient(left, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(71,182,165,1)), color-stop(100%, rgba(33,109,175,1)));
+    background: -webkit-linear-gradient(left, #47B6A5 0%, #216DAF 100%);
+    background: -o-linear-gradient(left, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    background: -ms-linear-gradient(left, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    background: linear-gradient(to right, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47b6a5', endColorstr='#216daf', GradientType=1 );
+    height: 10px;
+
+}
+.navbar-inverse .navbar-nav>li>a {
+    text-shadow: none;
+    border-bottom: 4px solid #f3f3f3;
+    transition: 0.3s;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: #47B6A5;
+    background-color: transparent;
+    border-bottom: 4px solid #47B6A5;
+    text-shadow: none;
+    transition: 0.3s;
+}
+.navbar-inverse{
+    background: #f3f3f3;
+    border: none;
+}
+.navbar-brand {
+padding: 3px;
+}
+.navbar-brand img{
+    width: 130px
+}
+.contenedor-carrusel .gradiente-slider{
+    background: rgba(71,182,165,1);
+    background: -moz-linear-gradient(left, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(71,182,165,1)), color-stop(100%, rgba(33,109,175,1)));
+    background: -webkit-linear-gradient(left, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    background: -o-linear-gradient(left, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    background: -ms-linear-gradient(left, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    background: linear-gradient(to right, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47b6a5', endColorstr='#216daf', GradientType=1 );
+    width: 100%;
+    height: 587px;
+    position: absolute;
+    top: 0px;
+    opacity: 0.6;
+}
+.contenedor-carrusel button{
+    background: none;
+    color: #fff;
+    padding: 10px 50px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.5s;
+}
+.contenedor-carrusel button:hover{
+    background: #fff;
+    color: #8bdce1;
+    transition: 0.5s;
+}
+.contenedor-carrusel .carousel-caption{
+    text-shadow: none;
+    bottom: 154px;
+}
+.contenedor-carrusel .carousel-caption h1{
+    font-size: 40px;
+}
+.contenedor-carrusel .carousel-caption p{
+    margin-bottom: 20px;
+}
+.contenedor-caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 24px;
+    justify-content: space-between;
+}
+.contenedor-caracteristicas img{
+    width: 100%;
+}
+.contenedor-caracteristicas .titulo{
+    display: flex;
+}
+.contenedor-caracteristicas .titulo h2{
+    color: #43bfc7;
+    margin-left: 10px;
+}
+.contenedor-caracteristicas .titulo hr{
+ border-top: 2px solid #43bfc7;
+ width: 30%;   
+ margin-top: 35px;
+}
+.contenedor-caracteristicas .texto {
+    width: 654px;
+    text-align: right;
+    padding: 10px 40px;
+    margin: auto;
+}
+.contenedor-botones{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedor-botones a{
+    border: 1px solid #43bfc7;
+    border-radius: 50%;
+    padding: 44px 30px;
+    color: #43bfc7;
+    position: relative;
+    transition: 0.5s ease;
+    margin: 5px;
+}
+.contenedor-botones a:hover{
+    border: 1px solid #43bfc7;
+    background: #43bfc7;
+    padding: 44px 30px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.contenedor-botones a:hover span{
+    color: #43bfc7;
+}
+.contenedor-botones a:hover .camara , .contenedor-botones a:hover .press{
+    opacity: 1;
+    top: 19%;
+    left: 16%;
+    transition: 0.5s ease;
+}
+.contenedor-botones a:hover .cursor{
+    opacity: 1;
+    top: 19%;
+    left: 30%;
+    transition: 0.5s ease;
+}
+.contenedor-contendidos {
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    padding-bottom: 3%;
+}
+
+.fa-video-camera{
+    position: absolute;
+    top:55%;
+    left: 4%;
+    font-size: 70px;
+    color: #43bfc7;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.fa-film{
+    position: absolute;
+    top:70%;
+    right: 8%;
+    font-size: 100px;
+    color: #43bfc7;
+    opacity: 0.3;
+}
+.fa-mouse-pointer{
+    position: absolute;
+    top:70%;
+    right: 8%;
+    font-size: 100px;
+    color: #43bfc7;
+    opacity: 0.3;
+}
+.prensa{
+    position: absolute;
+    top:70%;
+    right: 8%;
+    font-size: 110px;
+    color: #43bfc7;
+    opacity: 0.6; 
+}
+.camara{
+    position: absolute;
+    top:55%;
+    left: 16%;
+    font-size: 70px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.press{
+    position: absolute;
+    top:55%;
+    left: 16%;
+    font-size: 70px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.cursor{
+    position: absolute;
+    top:55%;
+    left: 30%;
+    font-size: 70px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.contenedor-gradient2{
+background: rgba(224,224,224,1);
+background: -moz-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 36%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(224,224,224,1)), color-stop(36%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+background: -webkit-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 36%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 36%, rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 36%, rgba(255,255,255,1) 100%);
+background: linear-gradient(to bottom, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 36%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff', GradientType=0 );
+    height: 889px;
+    transform: rotate(0deg);
+    margin-top: 30px;
+    width: 120%;
+    position: absolute;
+    z-index: -12;
+}
+.gradient-azul{
+    background: rgba(33,109,175,1);
+    background: -moz-linear-gradient(top, rgba(33,109,175,1) 0%, rgba(18,57,87,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(33,109,175,1)), color-stop(100%, rgba(18,57,87,1)));
+    background: -webkit-linear-gradient(top, rgba(33,109,175,1) 0%, rgba(18,57,87,1) 100%);
+    background: -o-linear-gradient(top, rgba(33,109,175,1) 0%, rgba(18,57,87,1) 100%);
+    background: -ms-linear-gradient(top, rgba(33,109,175,1) 0%, rgba(18,57,87,1) 100%);
+    background: linear-gradient(to bottom, rgba(33,109,175,1) 0%, rgba(18,57,87,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#216daf', endColorstr='#123957', GradientType=0 );
+    height: 972px;
+    transform: rotate(0deg);
+    position: absolute;
+    width: 120%;
+    left: -38px;
+    z-index: -40;
+}
+.contenedor-titulo {
+    display: flex;
+    width: 77%;
+    margin: auto;
+    color: #989898;
+    margin-top: 43px;
+}
+.contenedor-titulo hr {
+    width: 36%;
+    border-top: 2px solid #989898;
+    margin-top: 33px;
+}
+.contenedor-contendidos .texto-bajada{
+    text-align: center;
+    color: #b5b5b5;
+}
+.con-azul .contenedor-titulo {
+    display: flex;
+    width: 77%;
+    margin: auto;
+    color: #FFFFFF;
+    margin-top: 43px;
+}
+.con-azul .contenedor-titulo hr {
+    width: 36%;
+    border-top: 2px solid #FFFFFF;
+    margin-top: 33px;
+}
+.con-azul .contenedor-contendidos .texto-bajada{
+    text-align: center;
+    color: #FFFFFF;
+}
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 40px;
+}
+.contenedor-imagenes .link{
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.contenedor-imagenes .link img{
+    width: 100%;
+}
+.contenido p {
+    width: 239px;
+    margin: auto;
+}
+.contenedor-imagenes .link .gradiente-link{
+background: rgba(70,181,166,1);
+background: -moz-linear-gradient(left, rgba(70,181,166,1) 0%, rgba(34,109,175,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(70,181,166,1)), color-stop(100%, rgba(34,109,175,1)));
+background: -webkit-linear-gradient(left, rgba(70,181,166,1) 0%, rgba(34,109,175,1) 100%);
+background: -o-linear-gradient(left, rgba(70,181,166,1) 0%, rgba(34,109,175,1) 100%);
+background: -ms-linear-gradient(left, rgba(70,181,166,1) 0%, rgba(34,109,175,1) 100%);
+background: linear-gradient(to right, rgba(70,181,166,1) 0%, rgba(34,109,175,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b5a6', endColorstr='#226daf', GradientType=1 );
+width: 100%;
+height: 224px;
+position: absolute;
+z-index: 1;
+top: 0;
+opacity: 0;
+transition: 0.5s ease;
+}
+.link .contenido{
+    z-index: 3;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 80px;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.link:hover .contenido{
+    top: 55px;
+    transition: 0.5s ease;
+    opacity: 1;
+}
+.link img{
+    filter: grayscale(100%);
+}
+.contenedor-imagenes a .bordes:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 0%;
+    height:2px ;
+    background: #fff;
+    transition: all 0.7s;
+    box-shadow: 0 -182px #fff;
+    z-index: 2;
+}
+.contenedor-imagenes a .bordes:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 2px;
+    height:0%;
+    background: #fff;
+    transition: all 0.5s;
+    box-shadow: 254px 0 #fff;
+    z-index: 2;
+}
+.contenedor-imagenes a:hover .bordes:after{
+    height: 82%;
+    transition: all 0.7s;
+}
+.contenedor-imagenes a:hover .bordes:before{
+    width: 85%;
+    transition: all 0.5s;
+}
+.contenedor-imagenes a:hover .gradiente-link{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.contenedor-vermas{
+    display: flex;
+    width: 71%;
+    margin: auto;
+    margin-top: 30px;
+}
+.contenedor-vermas button{
+    border: 1px solid #43bfc7;
+    background: none;
+    color:#43bfc7;
+    border-radius: 30px; 
+    padding: 10px 50px;
+    transition: 0.5s ease;
+    width: 100%;
+}
+.contenedor-vermas button:hover{
+    background: #43bfc7;
+    color:#fff;
+    border-radius: 30px; 
+    padding: 10px 50px;
+    transition: 0.5s ease;
+}
+
+.contenedor-clientes{
+    background-image: url(http://localhost/area-medicos/wp-content/themes/area-medicos/img/fondo-clientes.png);
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.contenedor-clientes .contenedor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 230px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+    margin-top:10px;
+}
+.contenedor-clientes .contenedor-logos img{
+    margin: 30px 3px;
+}
+.logos{
+    animation: movimiento 20s linear infinite alternate;
+    text-align: center;
+}
+@keyframes movimiento{
+    from{
+     margin-top:0px;
+    }
+    to{
+    margin-top:-400px;
+    }
+}
+@media only screen and (max-width: 1120px){
+    @keyframes movimiento{
+        from{
+         margin-top:0px;
+        }
+        to{
+        margin-top:-550px;
+        }
+    }
+}
+@media only screen and (max-width: 769px){
+    @keyframes movimiento{
+        from{
+         margin-top:0px;
+        }
+        to{
+        margin-top:-1200px;
+        }
+    }
+}
+.contenedor-clientes .azul-clientes{
+    background: rgba(71,182,165,1);
+    background: -moz-linear-gradient(left, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(71,182,165,1)), color-stop(100%, rgba(33,109,175,1)));
+    background: -webkit-linear-gradient(left, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    background: -o-linear-gradient(left, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    background: -ms-linear-gradient(left, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    background: linear-gradient(to right, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47b6a5', endColorstr='#216daf', GradientType=1 );
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    opacity: 0.6;
+    z-index: -1;
+}
+.contenedor-info-contacto{
+display: flex;
+flex-wrap: wrap;
+}
+.info{
+    width: 350px;
+    margin: auto;
+}
+.contenedor-titulo-contacto{
+    display: flex;
+    width: 100%;
+    color: #989898;
+}
+.contenedor-titulo-contacto hr{
+    width: 60%;
+    border-top: 2px solid #989898;
+    margin-top: 33px;    
+}
+.info h3{
+    color: #43bfc7;
+}
+.info p{
+    color: #989898;
+}
+.mapa{
+    width: 50%;
+}
+@media only screen and (max-width: 716px){
+    .mapa{
+        margin: auto;
+        width: 100%;
+    }
+}
+.contendor-logo {
+    background: #d8d8d8;
+    height: 50px;
+    display: flex;
+}
+footer{
+    margin: auto;
+}
+footer img {
+    margin: auto;
+    width: 118px;
+}
