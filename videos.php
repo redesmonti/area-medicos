@@ -22,14 +22,14 @@
             <div class="contenido">
               <img src="" alt="logo">
               <h3><?php the_title(); ?></h3>
-              <p><?php the_excerpt(); ?></p>
+              
             </div>
           </a>
           <?php endwhile; endif; ?>
         </div>
         <div class="contenedor-vermas">
         
-          <button>Ver más</button>
+          <button><a href="http://localhost/clinica_mc/ver-videos/">Ver más</a></button>
         
         </div>
     </div>

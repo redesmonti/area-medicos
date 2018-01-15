@@ -18,7 +18,7 @@
                 <div class="contenido">
                 <img src="" alt="logo">
                 <h3><?php the_title(); ?></h3>
-                <p><?php the_excerpt(); ?></p>
+                
                 </div>
             </a>
         <?php endwhile; endif; ?>

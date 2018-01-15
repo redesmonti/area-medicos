@@ -64,4 +64,98 @@ function my_register_sidebars() {
     );
     /* Repeat register_sidebar() code for additional sidebars. */
 } 
+
+
+/*Noticias*/
+
+// La función no será utilizada antes del 'init'.
+add_action( 'init', 'news_init' );
+/* Here's how to create your customized labels */
+function news_init() {
+  $labels = array(
+  'name' => _x( 'Noticias', 'post type general name' ),
+        'singular_name' => _x( 'Noticia', 'post type singular name' ),
+        'add_new' => _x( 'Añadir nueva', 'news' ),
+        'add_new_item' => __( 'Añadir nuevo Noticia' ),
+        'edit_item' => __( 'Editar Noticia' ),
+        'new_item' => __( 'Nuevo Noticia' ),
+        'view_item' => __( 'Ver Noticia' ),
+        'search_items' => __( 'Buscar Noticias' ),
+        'not_found' =>  __( 'No se han encontrado Noticias' ),
+        'not_found_in_trash' => __( 'No se han encontrado Noticias en la papelera' ),
+        'parent_item_colon' => ''
+    );
+ 
+    // Creamos un array para $args
+    $args = array( 'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'menu_position' => null,
+        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+    );
+ 
+    register_post_type( 'noticia', $args ); /* Registramos y a funcionar */
+}
+
+// Lo enganchamos en la acción init y llamamos a la función create_book_taxonomies() cuando arranque
+add_action( 'init', 'create_news_taxonomies', 0 );
+ 
+// Creamos dos taxonomías, Categoria y autor para el custom post type "libro"
+function create_news_taxonomies() {
+
+  // Añadimos nueva taxonomía y la hacemos jerárquica (como las categorías por defecto)
+  $labels = array(
+  'name' => _x( 'Categorias', 'taxonomy general name' ),
+  'singular_name' => _x( 'Categoria', 'taxonomy singular name' ),
+  'search_items' =>  __( 'Buscar por Categoria' ),
+  'all_items' => __( 'Todos los Categorias' ),
+  'parent_item' => __( 'Categoria padre' ),
+  'parent_item_colon' => __( 'Categoria padre:' ),
+  'edit_item' => __( 'Editar Categoria' ),
+  'update_item' => __( 'Actualizar Categoria' ),
+  'add_new_item' => __( 'Añadir nuevo Categoria' ),
+  'new_item_name' => __( 'Nombre del nuevo Categoria' ),
+);
+register_taxonomy( 'categoria', array( 'noticia' ), array(
+  'hierarchical' => true,
+  'labels' => $labels, /* ADVERTENCIA: Aquí es donde se utiliza la variable $labels */
+  'show_ui' => true,
+  'query_var' => true,
+  'capability_type' => 'post',
+  'rewrite' => array( 'slug' => 'categoria' ),
+));
+
+// Añado otra taxonomía, esta vez no es jerárquica, como las etiquetas.
+$labels = array(
+  'name' => _x( 'Etiquetas', 'taxonomy general name' ),
+  'singular_name' => _x( 'Escritor', 'taxonomy singular name' ),
+  'search_items' =>  __( 'Buscar Etiquetas' ),
+  'popular_items' => __( 'Etiquetas populares' ),
+  'all_items' => __( 'Todos los Etiquetas' ),
+  'parent_item' => null,
+  'parent_item_colon' => null,
+  'edit_item' => __( 'Editar Escritor' ),
+  'update_item' => __( 'Actualizar Escritor' ),
+  'add_new_item' => __( 'Añadir nuevo Escritor' ),
+  'new_item_name' => __( 'Nombre del nuevo Escritor' ),
+  'separate_items_with_commas' => __( 'Separar Etiquetas por comas' ),
+  'add_or_remove_items' => __( 'Añadir o eliminar Etiquetas' ),
+  'choose_from_most_used' => __( 'Escoger entre los Etiquetas más utilizados' )
+);
+ 
+register_taxonomy( 'etiqueta', 'noticia', array(
+  'hierarchical' => false,
+  'labels' => $labels, /* ADVERTENCIA: Aquí es donde se utiliza la variable $labels */
+  'show_ui' => true,
+  'query_var' => true,
+  'rewrite' => array( 'slug' => 'etiqueta' ),
+));
+} // Fin de la función create_book_taxonomies().
+
+
 ?>
