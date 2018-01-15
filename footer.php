@@ -1,6 +1,7 @@
     <div class="contendor-logo">
       <footer>
-        <img src="http://localhost/area-medicos/wp-content/themes/area-medicos/img/logo-monti.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-monti.png" alt="">
+        <?php wp_footer(); ?>
       </footer>
     </div>
       

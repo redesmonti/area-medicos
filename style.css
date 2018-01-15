@@ -30,28 +30,142 @@ body{
     height: 10px;
 
 }
-.navbar-inverse .navbar-nav>li>a {
-    text-shadow: none;
-    border-bottom: 4px solid #f3f3f3;
-    transition: 0.3s;
+
+
+/*--------------------------------------------------------------
+# Navegacion (navbar)
+--------------------------------------------------------------*/
+
+nav.navegacion {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #fff;
 }
-.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+nav.navegacion ul{
+    margin-top: 12px;
+}
+nav.navegacion ul li{
+    /*para los dispositivos moviles*/
+    text-align: center;
+    
+}
+nav.navegacion ul li a {
+    /* para los enlaces*/
+    color: #2a3073;
+    padding: 13px;
+    padding-bottom: 3px;
+    border-bottom: 10px solid #fff;
+    transition: 0.3s ease;  
+}
+nav.navegacion ul li a:hover, nav.navegacion ul li a:active,  nav.navegacion ul li a:focus{
     color: #47B6A5;
     background-color: transparent;
     border-bottom: 4px solid #47B6A5;
     text-shadow: none;
     transition: 0.3s;
 }
-.navbar-inverse{
-    background: #f3f3f3;
-    border: none;
+nav.navegacion ul li:hover, nav.navegacion ul li:active {
+
 }
+#navbarjs {
+    position: fixed;
+    box-shadow: 1px 1px 7px #00000045;
+}
+/*togglenavigation*/
+.navbar .navbar-header,
+.navbar-collapse {
+    float:none;
+    vertical-align: top;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 26px;
+  height: 4px;
+  background-color: #2a3073;
+  border-radius: 1px;
+}
+
+/*codigo para ajustar logo en navbar*/
 .navbar-brand {
-padding: 3px;
+    /*padding 8px ajusta bien para todos los dispositivos*/
+    padding: 8px;
 }
-.navbar-brand img{
-    width: 130px
+.navbar-brand> a img {
+      height: 100%;
+      padding: 1px;
+      width: 130px;
 }
+
+/* para dispositivos moviles*/
+@media (min-width: 780px){
+    
+    nav.navegacion ul li{
+        margin-left: auto;
+        margin-right:auto;
+
+    }
+    nav.navegacion{
+        padding: 1px 0;
+        width: 100%;
+        position:absolute;
+        display: block;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Navegacion (navbar) Dropdown Css
+--------------------------------------------------------------*/
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+    float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+/*./Dropdown Css*/
+
 .contenedor-carrusel .gradiente-slider{
     background: rgba(71,182,165,1);
     background: -moz-linear-gradient(left, rgba(71,182,165,1) 0%, rgba(33,109,175,1) 100%);
@@ -407,7 +521,7 @@ transition: 0.5s ease;
 }
 
 .contenedor-clientes{
-    background-image: url(http://localhost/area-medicos/wp-content/themes/area-medicos/img/fondo-clientes.png);
+    background-image: url(http://localhost/clinica_mc/wp-content/uploads/2018/01/fondo-clientes.png);
     position: relative;
     z-index: -1;
     overflow: hidden;

@@ -1,9 +1,8 @@
 <?php get_header(); ?>
-    <?php include_once( 'carrusel.php' ); ?>    
-    <?php include_once( 'descripcion.php' ); ?>
-    <?php include_once( 'videos.php' ); ?>
-    <?php include_once( 'prensa.php' ); ?>
-    <?php include_once( 'web.php' ); ?>
-    <?php include_once( 'clientes.php' ); ?>
-    <?php include_once( 'contacto.php' ); ?>
+    <?php if ( have_posts() ) : the_post(); ?>
+            <h1><?php the_title(); ?></h1>
+            <hr>
+            <?php  if ( has_post_thumbnail() ) { the_post_thumbnail('medium', array('class' => 'img-responsive')); }?>
+            <p><?php the_content(); ?></p>
+    <?php endif; ?>
 <?php get_footer(); ?>

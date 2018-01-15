@@ -14,7 +14,7 @@
             <div class="bordes"></div>
             <div class="gradiente-link"></div>
             <?php if ( has_post_thumbnail() ) {
-                        the_post_thumbnail();
+                        the_post_thumbnail('medium', array('class' => 'img-responsive'));
                     } ?>  
             <div class="contenido">
               <img src="" alt="logo">

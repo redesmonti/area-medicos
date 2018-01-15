@@ -1,6 +1,6 @@
     <div class="contenedor-caracteristicas" name="areamedica" id="areamedica">
       <div class="contenedor-imagen">
-          <img src="http://localhost/area-medicos/wp-content/themes/area-medicos/img/computador.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/computador.png" alt="">
       </div>
       <div class="texto">
         <div class="titulo">
