@@ -38,7 +38,7 @@ require_once('wp-bootstrap-navwalker.php');
 function mis_menus() {
   register_nav_menus(
     array(
-      'navigation' => __( 'Menú de navegación de area_medicos'),
+      'navegador' => __( 'Menú de navegación de area_medicos'),
     )
   );
 }
@@ -156,6 +156,7 @@ register_taxonomy( 'etiqueta', 'noticia', array(
   'rewrite' => array( 'slug' => 'etiqueta' ),
 ));
 } // Fin de la función create_book_taxonomies().
+
 
 
 ?>

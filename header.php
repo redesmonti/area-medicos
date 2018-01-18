@@ -35,7 +35,7 @@
               </div>
               <div class="smooth-scroll collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <?php wp_nav_menu( array( 
-                  'theme_location' => 'navigation',
+                  'theme_location' => 'navegador',
 
                   'depth' => 4,
                   'container' => false,
