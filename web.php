@@ -16,7 +16,7 @@
                     the_post_thumbnail('medium', array('class' => 'img-responsive'));
                 } ?>  
                 <div class="contenido">
-                <img src="" alt="logo">
+                <img src="<?php echo get_field('imagen_logo'); ?>" alt="">
                 <h3><?php the_title(); ?></h3>
                 
                 </div>

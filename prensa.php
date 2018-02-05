@@ -6,7 +6,8 @@
             <h2>Prensa</h2>
             <hr>
         </div>
-        <p class="texto-bajada">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p class="texto-bajada">Posicionamos médicos, centros médicos o clínicas en los distintos medios de
+comunicación, lo que permite incrementar la cantidad de pacientes.</p>
         <div class="contenedor-imagenes">
         <?php 
         $currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1 ; //cuenta el numero de post y si no existen vuelve a la primera pagina
@@ -33,7 +34,7 @@
                         the_post_thumbnail('medium', array('class' => 'img-responsive'));
                     } ?>  
             <div class="contenido">
-              <img src="" alt="logo">
+              <img src="<?php echo get_field('imagen_logo'); ?>" alt="">
               <h3><?php the_title(); ?></h3>
               
             </div>
@@ -45,7 +46,7 @@
         </div>
         <div class="contenedor-vermas">
             <hr>
-            <button><a href="http://localhost/clinica_mc/ver-noticias/">Ver más</a></button>
+            <button><a href="http://192.168.100.9/clinica_mc/ver-noticias/">Ver más</a></button>
             <hr>
           </div>
     </div>

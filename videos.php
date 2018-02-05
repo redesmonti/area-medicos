@@ -9,7 +9,8 @@
             <h2>Videos</h2>
             <hr>
         </div>
-        <p class="texto-bajada">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p class="texto-bajada">Creamos videos corporativos, testimoniales, consejos prácticos, animaciones y endless,
+según las necesidades de cada cliente.</p>
         <div class="contenedor-imagenes wow fadeIn">
         <?php query_posts('category_name=Videos&showposts=6'); ?>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -30,7 +31,7 @@
         </div>
         <div class="contenedor-vermas">
         
-          <button><a href="http://localhost/clinica_mc/ver-videos/">Ver más</a></button>
+          <button><a href="http://192.168.100.9/clinica_mc/ver-videos/">Ver más</a></button>
         
         </div>
     </div>

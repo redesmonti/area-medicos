@@ -14,7 +14,7 @@
             <div class="gradiente-slider"></div>
             <div class="carousel-caption">
               <h1>LOREM IPSUM DOLOR</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <p>Somos especialistas en gestión de medios para el sector salud. </p>
               <button>Botón</button>
               <button>Botón</button>
             </div>
@@ -24,7 +24,7 @@
             <div class="gradiente-slider"></div>
             <div class="carousel-caption">
                 <h1>LOREM IPSUM DOLOR</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p>Manejamos sus redes sociales, para una comunicación fluida con sus pacientes. </p>
                 <button>Botón</button>
                 <button>Botón</button>
               </div>

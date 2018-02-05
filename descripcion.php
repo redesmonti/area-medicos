@@ -4,9 +4,12 @@
       </div>
       <div class="texto">
         <div class="titulo">
-          <hr><h2>LOREM IPSUM DOLOR</h2>
+          <hr><h2>Nuestros Servicios</h2>
         </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Somos una agencia de comunicaciones en 360°, con una vasta experiencia en el sector
+salud. Ofrecemos soluciones que se adaptan a sus necesidades, ya sea posicionamiento en
+medios, manejo de redes sociales, desarrollo de páginas web y videos, y mucho más, para
+que su consulta, centro médico o clínica esté donde tiene que estar.</p>
             <div class="contenedor-botones">
                 <a href="#videos" data-ancla="videos"><i class="fa fa-video-camera camara" aria-hidden="true"></i><span>Videos</span></a> 
                 <a href="#prensa" data-ancla="prensa"><i class="fa fa-newspaper-o press" aria-hidden="true"></i><span>Prensa</span></a>

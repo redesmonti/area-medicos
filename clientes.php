@@ -6,6 +6,8 @@
         </div>
       <div class="contenedor-logos">
           <div class="logos">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sedadent-logo.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hemobiotec-logo.png" alt="">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dieta-1.png" alt="">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/carreno-dc-1.png" alt="">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/donoso-logo.png" alt="">
