@@ -6,6 +6,14 @@ Description: Tema área médica
 Version: 1.0
 Tags: Médicos.
 */
+@import url('https://fonts.googleapis.com/css?family=Roboto:700|Work+Sans');
+
+h1, h2, h3, h4{
+    font-family: 'Roboto', sans-serif;
+}
+p, span, a, button, ul, li{
+    font-family: 'Work Sans', sans-serif;
+}
 body{
 
     background: rgba(224,224,224,1);
@@ -464,6 +472,7 @@ transition: 0.5s ease;
 .link img{
     filter: grayscale(100%);
 }
+
 .contenedor-imagenes a .bordes:before{
     content: "";
     display: block;
@@ -498,6 +507,9 @@ transition: 0.5s ease;
     width: 85%;
     transition: all 0.5s;
 }
+
+
+
 .contenedor-imagenes a:hover .gradiente-link{
     opacity: 0.7;
     transition: 0.5s;
@@ -507,6 +519,9 @@ transition: 0.5s ease;
     width: 71%;
     margin: auto;
     margin-top: 30px;
+}
+.contenedor-vermas a {
+    width: 100%;
 }
 .contenedor-vermas button{
     border: 1px solid #43bfc7;
@@ -648,12 +663,21 @@ footer img {
 # Interior
 --------------------------------------------------------------*/
 
-.contenedor-entradas{
-    width: 100%;
-    margin-bottom: 10px; 
-    margin-top: 20px;
+.container.contenedor-princial-entradas {
+    background: #fff;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    padding: 3% 5%;
+    box-shadow: 0px 4px 15px #0000001f;
 }
 
+.navegadores-entradas a:nth-child(2){
+    float: right;
+}
+
+.navegadores-entradas {
+    margin-top: 5%;
+}
 
 
 /*--------------------------------------------------------------

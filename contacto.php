@@ -7,11 +7,11 @@
       </div>
       <div class="bajada-info">
         <h3>Teléfono</h3>
-        <p>(02) 22369870</p>
+        <p> <i class="fa fa-phone" aria-hidden="true"></i> (02) 22369870</p>
         <h3>Correo</h3>
-        <p>contacto@monticomunicaciones.cl</p>
+        <p> <i class="fa fa-envelope" aria-hidden="true"></i> contacto@monticomunicaciones.cl</p>
         <h3>Dirección</h3>
-        <p>La Concepción 81 Oficina 1106
+        <p> <i class="fa fa-map-marker" aria-hidden="true"></i> La Concepción 81 Oficina 1106
           <br>Providencia
           <br>Santiago – Chile
         </p>
