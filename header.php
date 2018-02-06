@@ -22,7 +22,7 @@
         <div class="container">
               <div class="navbar-header"> 
                 <div class="navbar-brand">
-                  <a href="http://localhost/clinica_mc/">
+                  <a href="<?php bloginfo('url'); ?>">
                     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-monti.png" alt="">
                   </a>  
                 </div> 
